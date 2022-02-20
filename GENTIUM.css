@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: black;
+    background-image: url('./IMAGES/BG2.jpg');
+    color: white;
+    min-height: 100vh;
+    background-size: cover;
+    padding: 20px 5%;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav ul{
+    list-style: none;
+    margin-left: auto;
+}
+
+nav ul li{
+
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav #logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav button{
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+nav button img{
+    width: 20px;
+}
+
+header > .line{
+    background-color: crimson;
+    width: 70px;
+    height: 2px;
+    margin-top: 100px;
+}
+
+header h1{
+    font-size: 4rem;
+}
+
+header button#cta {
+    padding: 15px 30px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 1px solid crimson;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+header button#cta:hover {
+    color: crimson;
+    background-image: linear-gradient(45deg, rgb(238, 176, 189), rgb(247, 225, 229));
+}
+
+.features{
+    /* background-color: white; */
+    display: flex;
+    gap: 20px;
+    margin-top: 80px 0 20px;
+    position: relative;
+
+    
+}
+
+.features .card{
+    height: 350px;
+    flex: 1;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+   
+}
+
+.features .card:hover {
+    transform: translateY(-5px);
+    transition: .5s;
+    
+}
+
+.features .card img {
+    width: 60px;
+}
+
+.features .card h2 {
+    margin-top: 60px;
+}
+
+.features .card .line {
+    height: 2px;
+    width: 50px;
+    background-color: white;
+    margin: 5px 0px 20px;
+}
+
+.site-bg {
+    background-color: crimson !important; 
+}
+
+.site-alt-bg {
+    background-color: rgb(46, 33, 33);
+}
+
+.features .box {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    bottom: -15px;
+    right: -15px;
+}
